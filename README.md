@@ -6,7 +6,7 @@ HTML survey form project built as part of FreeCodeCamp Responsive Web Design cer
 A simple form that explores different learning styles and study habits.
 
 ## 🌐 Live Demo
-https://tamina-lab.github.io/Debug-your-learning-survey/
+https://tamina-lab.github.io/debug-your-learning-survey/
 
 ## 💻 Source Code
-https://github.com/tamina-lab/Debug-your-learning-survey
+https://github.com/tamina-lab/debug-your-learning-survey
