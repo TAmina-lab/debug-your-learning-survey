@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form - Debug Your Learning</title>
+  </head>
+  <body>
+   <header>
+    <h1 id="title">Debug Your Learning</h1>
+    <p id="description">There is no perfect learner. Only different ways of growing.
+    <br>Your brain has its own operating system.</p>
+    <p>This survey is part of a fictional productivity platform designed to personalize learning experiences for students and developers.</p>
+   </header>
+   <main>
+    <form id="survey-form">
+    <fieldset>
+     <legend><b>Basic info section</b></legend>
+     <label for="name" id="name-label"><i>What should we call you?</i></label>
+     <input 
+     id="name" 
+     type="text"
+     name="name"
+     required
+     size="20"
+     placeholder="e.g. Mr. Duck"
+     />
+     <br>
+     <label for="email" id="email-label"><i>Your email address is?</i></label>
+     <input
+      id="email"
+      type="email"
+      name="email"
+      size="20"
+      required
+      placeholder="example@duck-mail.com" 
+      />
+      <br>
+      <label for="number" id="number-label"><i>How old are you?</i></label>
+      <input 
+      type="number" 
+      name="age" 
+      id="number" 
+      min="5" 
+      max="100"
+      placeholder="Age"
+      />
+    </fieldset>
+    <hr>
+    <fieldset>
+     <legend><b>Dropdown questions</b></legend>
+     <label for="dropdown"><i>1. How do you learn best?</i></label>
+     <select name="Q1" id="dropdown" required>
+       <option selected value="video">Watching videos</option>
+       <option value="reading">Reading documentation</option>
+       <option value="practice">Hands-on practice</option>
+       <option value="group">Group learning</option>
+       <option value="trial">Trial and error</option>
+     </select>
+         <br>
+      <label for="dropdown-Q2"><i>2. What motivates you to study?</i></label>
+      <select name="Q2" id="dropdown-Q2" required>
+       <option value="career-goals">Career goals</option>
+       <option value="curiosity">Curiosity</option>
+       <option value="money">Money</option>
+       <option selected value="personal-growth">Personal growth</option>
+       <option value="social-recognition">Social recognition</option>
+     </select>
+         <br>
+     <label for="dropdown-Q3"><i>3. Biggest struggle while learning?</i></label>
+     <select name="Q3" id="dropdown-Q3" required>
+       <option value="staying-consistent">Staying consistent</option>
+       <option selected value="fear">Fear of failure</option>
+       <option value="too-much-information">Too much information</option>
+       <option value="lack-of-confidence">Lack of confidence</option>
+       <option value="distractions">Distractions</option>
+       <option value="time-management">Time management</option>
+    </select>
+         <br>
+      <label for="dropdown-Q4"><i>4. Preferred study environment?</i></label>
+      <select name="Q4" id="dropdown-Q4" required>
+       <option value="quiet-room">Quiet room</option>
+       <option selected value="background-music">Music in background</option>
+       <option value="café">Café/public places</option>
+       <option value="with-friends">Study with friends</option>
+       <option value="late-night">Late-night sessions</option>
+     </select>
+       <br>
+      <label for="dropdown-Q5"><i>5. How do you usually feel when learning something difficult?</i></label>
+      <select name="Q5" id="dropdown-Q5" required>
+       <option value="excited">Excited</option>
+       <option value="overwhelmed">Overwhelmed</option>
+       <option value="motivated">Motivated</option>
+       <option value="frustrated">Frustrated</option>
+       <option selected value="curious">Curious</option>
+     </select>
+    </fieldset>
+    <hr>
+    <fieldset>
+     <legend><b>Checkboxes and radio  buttons</b></legend>
+     <br>
+     <fieldset>
+     <legend><i>6. How often do you procrastinate?</i></legend>
+      <input
+        type="radio"
+        id="rarely"
+        name="procrastinate"
+        value="rarely"/>
+      <label for="rarely">Rarely</label>     
+      <input
+        type="radio"
+        id="sometimes"
+        name="procrastinate"
+        value="sometimes"/>
+      <label for="sometimes">Sometimes</label>
+      <input
+        type="radio"
+        id="often"
+        name="procrastinate"
+        value="often"/>
+      <label for="often">Often</label>
+      <input
+        type="radio"
+        id="constantly"
+        name="procrastinate"
+        value="constantly"
+        checked/>
+      <label for="constantly">Constantly</label>
+    </fieldset>
+    <br>
+    <fieldset>
+     <legend><i>7. What helps you stay focused? (Check all that apply)</i></legend>
+      <input
+        type="checkbox"
+        id="music"
+        name="focus-tools"
+        value="music"
+        checked/>
+      <label for="music">Music</label>
+      <br>     
+      <input
+        type="checkbox"
+        id="pomodoro"
+        name="focus-tools"
+        value="pomodoro"/>
+      <label for="pomodoro">Pomodoro technique</label>
+      <br>
+      <input
+        type="checkbox"
+        id="planning"
+        name="focus-tools"
+        value="planning"/>
+      <label for="planning">Planning apps</label>
+      <br>
+      <input
+        type="checkbox"
+        id="deadlines"
+        name="focus-tools"
+        value="deadlines"
+        checked/>
+      <label for="deadlines">Deadlines</label>
+      <br>
+      <input
+       type="checkbox"
+       id="with-others"
+       name="focus-tools"
+       value="with-others"/>
+      <label for="with-others">Studying with others</label>
+      <br>
+      <input
+       type="checkbox"
+       id="coffee"
+       name="focus-tools"
+       value="coffee"
+       checked/>
+      <label for="coffee">Coffee</label>
+     </fieldset>
+     <br> 
+     <fieldset>
+     <legend><i>8. How many hours weekly do you study?</i></legend>
+      <input
+        type="radio"
+        id="3H"
+        name="study-hours"
+        value="3H"/>
+      <label for="3H">1–3</label>     
+      <input
+        type="radio"
+        id="7H"
+        name="study-hours"
+        value="7H"
+        checked/>
+      <label for="7H">4–7</label>
+      <input
+        type="radio"
+        id="15H"
+        name="study-hours"
+        value="15H"/>
+      <label for="15H">8–15</label>
+      <input
+        type="radio"
+        id="16H"
+        name="study-hours"
+        value="16H"/>
+      <label for="16H">15+</label>
+    </fieldset>
+    <br>
+    <fieldset>
+    <legend><i>9. Do you prefer:</i></legend>
+    <input
+    id="structure"
+    type="radio"
+    name="prefer-option"
+    value="structure"/>
+    <label for="structure">Structure and plans</label>
+    <input
+    id="freedom"
+    type="radio"
+    name="prefer-option"
+    value="freedom"
+    checked/>
+    <label for="freedom">Freedom and improvisation</label>    
+    </fieldset>
+    <br>
+    <fieldset>
+     <legend><i>10. What field interests you most?(Check all that apply)</i></legend>
+      <input
+        type="checkbox"
+        id="Q10-web-development"
+        name="interests"
+        value="web-development"
+        checked/>
+      <label for="Q10-web-development">Web Development</label>
+      <br>     
+      <input
+        type="checkbox"
+        id="Q10-cybersecurity"
+        name="interests"
+        value="cybersecurity"/>
+      <label for="Q10-cybersecurity">Cybersecurity</label>
+      <br>
+      <input
+        type="checkbox"
+        id="Q10-ML"
+        name="interests"
+        value="ML"
+        checked/>
+      <label for="Q10-ML">AI / Machine Learning</label>
+      <br>
+      <input
+        type="checkbox"
+        id="Q10-data-science"
+        name="interests"
+        value="data-science"
+        checked/>
+      <label for="Q10-data-science">Data Science</label>
+      <br>
+      <input
+       type="checkbox"
+       id="Q10-game"
+       name="interests"
+       value="game-development"/>
+      <label for="Q10-game">Game Development</label>
+      <br>
+      <input
+       type="checkbox"
+       id="Q10-UI-UX"
+       name="interests"
+       value="UI-UX"
+       checked/>
+      <label for="Q10-UI-UX">UI/UX Design</label>
+      <br>
+      <input
+      type="checkbox"
+      id="Q10-Mapps"
+      name="interests"
+      value="mobile-apps"/>
+      <label for="Q10-Mapps">Mobile Apps</label>
+     </fieldset>                    
+    </fieldset>
+    <hr>
+    <fieldset>
+      <legend><b>Write your heart out section</b></legend>
+      <br>
+        <label for="Q11-text"><i>11. What’s your current “learning obsession”?</i></label>
+        <textarea 
+        cols="60" 
+        rows="6" 
+        name="learning-obsession" 
+        id="Q11-text"
+        placeholder="e.g. Mr. Duck is obsessed with coding."
+        ></textarea>
+      <hr>
+        <label for="Q12-text"><i>12. Describe your current learning style.</i></label>
+        <textarea 
+        cols="60" 
+        rows="6" 
+        name="learning-style" 
+        id="Q12-text"
+        placeholder="Small progress is still progress."></textarea>          
+    </fieldset>
+    <hr>
+    <button type="submit" id="submit">Submit</button>
+    <hr>
+    </form>
+   </main>
+   <footer>
+    <p><i>“Every expert was once confused too.”</p>
+    <p>Thank you for being part of this little survey. Hope you enjoyed it.</p>
+    <p>With gratitude,
+    <br>Mr. Duck</i>
+    </p>
+    <hr>
+  </footer>
+  </body>
+</html>
